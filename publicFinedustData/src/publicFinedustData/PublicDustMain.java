@@ -74,7 +74,7 @@ public class PublicDustMain {
 	public static int updateInputSn() {
 		ArrayList<DustInfo> imsiDustInfoList = selectDustInfo();
 		printDustInfo(imsiDustInfoList);
-		System.out.print("update Sn >>");
+		System.out.print("수정할 관리번호 >>");
 		int data = Integer.parseInt(sc.nextLine());
 		return data;
 	}

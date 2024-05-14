@@ -1,18 +1,18 @@
 package publicFinedustData;
 
 public class DustInfo {
-	private int clearVal;
-	private int sn;
-	private String districtName;
-	private String dataDate;
-	private int issueVal;
-	private String issueTime;
-	private String clearDate;
-	private String issueDate;
-	private String moveName;
-	private String clearTime;
-	private String issueGbn;
-	private String itemCode;
+	private int clearVal; // 해제농도
+	private int sn; //관리번호
+	private String districtName; //지역명
+	private String dataDate; //발령일
+	private int issueVal; //발령농도
+	private String issueTime; //발령시간
+	private String clearDate; //해제일
+	private String issueDate; //발령일
+	private String moveName; //권역명
+	private String clearTime; //해제시간
+	private String issueGbn; //경보단계
+	private String itemCode; //항목명
 	
 	public DustInfo() {
 		super();
@@ -133,10 +133,10 @@ public class DustInfo {
 
 	@Override
 	public String toString() {
-		return "DustInfo [clearVal=" + clearVal + ", sn=" + sn + ", districtName=" + districtName + ", dataDate="
-				+ dataDate + ", issueVal=" + issueVal + ", issueTime=" + issueTime + ", clearDate=" + clearDate
-				+ ", issueDate=" + issueDate + ", moveName=" + moveName + ", clearTime=" + clearTime + ", issueGbn="
-				+ issueGbn + ", itemCode=" + itemCode + "]";
+		return "[해제농도=" + clearVal + ", 관리번호=" + sn + ", 지역명=" + districtName + ", 데이터생성날짜="
+				+ dataDate + ", 발령농도=" + issueVal + ", 발령시간=" + issueTime + ", 해제일=" + clearDate
+				+ ", 발령일=" + issueDate + ", 권역명=" + moveName + ", 해제시간=" + clearTime + ", 경보단계="
+				+ issueGbn + ", 항목명=" + itemCode + "]";
 	}
 	
 	
